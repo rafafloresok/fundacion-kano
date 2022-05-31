@@ -14,6 +14,6 @@ setInterval(() => {
     }, 500);
     setTimeout(() => {
         landingCarousel.classList.remove('carousel-transition');
-    }, 1000);
+    }, 1500);
     i === (landingImgSrc.length-1) ? i = 0 : i++;
 }, 3500);

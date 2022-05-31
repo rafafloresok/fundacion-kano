@@ -16,6 +16,9 @@ img {
 svg {
   vertical-align: middle;
 }
+body {
+  max-width: 1320px;
+}
 
 /* HEADER */
 .header {
@@ -217,6 +220,21 @@ svg {
 .section__content {
   background-color: #EEEEEE;
 }
+.section__img-container {
+  position: relative;
+}
+.section__img-filter {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgb(238,238,238);
+  background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(238,238,238,0.1) 50%, rgba(238,238,238,0) 100%);
+}
+.section__img--la-fundacion {
+  filter: brightness(1.5);
+}
 .section__description {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
@@ -249,15 +267,14 @@ svg {
   overflow: hidden;
   z-index: 2;
   margin-top: 10px;
+  box-shadow: 0px 0px 20px black;
 }
 .profiles__mask {
-  /* background-color: #003153; */
   background: rgb(0,49,83);
-background: linear-gradient(0deg, rgba(0,49,83,0) 0%, rgba(0,49,83,1) 100%);
   z-index: 1;
   position: absolute;
   top: 0;
-  height: 180px;
+  height: 60px;
   width: 100%;
 }
 .profiles__text {
@@ -269,6 +286,61 @@ background: linear-gradient(0deg, rgba(0,49,83,0) 0%, rgba(0,49,83,1) 100%);
 }
 .profiles__description {
   font-size: 1.5rem;
+}
+
+/* FORMACION */
+.formacion {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.formacion__card {
+  width: 280px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px black;
+  margin: 1rem;
+}
+.formacion__img-container {
+  width: 100%;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.formacion__img-container-01 {
+  background-image: url(/images/formacion/formacion_01.jpg);
+}
+.formacion__img-container-02 {
+  background-image: url(/images/formacion/formacion_02.jpg);
+}
+.formacion__img-container-03 {
+  background-image: url(/images/formacion/formacion_03.jpg);
+}
+.formacion__img-container-04 {
+  background-image: url(/images/formacion/formacion_04.jpg);
+}
+.formacion__mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
+}
+.formacion__title {
+  font-size: 2rem;
+  text-align: center;
+}
+.formacion__list {
+  font-size: 1.5rem;
+  margin: 1rem 0rem 1rem 2.5rem;
 }
 
 /* RESPONSIVE */
@@ -285,21 +357,11 @@ background: linear-gradient(0deg, rgba(0,49,83,0) 0%, rgba(0,49,83,1) 100%);
 
   .landing {
     display: flex;
+    margin-bottom: 3rem;
   }
   .landing__carousel {
     width: 50%;
     height: calc(100vh - 50px);
-  }
-  .carousel-transition {
-    animation: change-opacity 1s ease;
-  }
-  @keyframes change-opacity {
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
   .landing__info {
     width: 50%;
@@ -326,7 +388,7 @@ background: linear-gradient(0deg, rgba(0,49,83,0) 0%, rgba(0,49,83,1) 100%);
     width: 70px;
     margin-left: calc(10vw + 10px);
   }
-
+  
   .section {
     padding: 3rem 0rem;
   }
@@ -336,10 +398,6 @@ background: linear-gradient(0deg, rgba(0,49,83,0) 0%, rgba(0,49,83,1) 100%);
     flex-flow: row wrap;
     align-items: center;
   }
-  /* .section__title-container {
-    width: 100%;
-    order: 0;
-  } */
   .section__title {
     font-size: 1.8rem;
     padding: 1rem 0rem 1rem 2.3rem;
@@ -360,11 +418,12 @@ background: linear-gradient(0deg, rgba(0,49,83,0) 0%, rgba(0,49,83,1) 100%);
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.8) 80%, rgba(255,255,255,1) 100%);
   }
-  .section__img{
+  .section__img-container{
     width: 50%;
     order: 2;
-    /* padding: 0 1rem; */
-    /* justify-self: end; */
+  }
+  .section__img-filter {
+    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(238,238,238,0.1) 50%, rgba(238,238,238,0) 100%);
   }
   .section__text {
     width: 50%;
@@ -382,4 +441,15 @@ background: linear-gradient(0deg, rgba(0,49,83,0) 0%, rgba(0,49,83,1) 100%);
   }
 }
 
+.carousel-transition {
+  animation: change-opacity 1s ease;
+}
+@keyframes change-opacity {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
