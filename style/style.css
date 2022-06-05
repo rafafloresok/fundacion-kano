@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Roboto Slab', serif;
+  font-family: 'Nunito', sans-serif;
   border: 1px solid black;
 }
 img {
@@ -18,6 +19,7 @@ svg {
 }
 body {
   max-width: 1320px;
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -40,6 +42,7 @@ body {
   box-shadow: 0rem 0.5rem 1rem #003153;
 }
 .logo-link {
+  font-family: 'Roboto Slab', serif;
   position:absolute;
   left: 1rem;
   top: 1rem;
@@ -169,6 +172,7 @@ body {
   margin-bottom: 2rem;
 }
 .landing__title {
+  font-family: 'Roboto Slab', serif;
   font-size: 2rem;
   background-color: #003153;
   color: white;
@@ -202,6 +206,7 @@ body {
   margin-bottom: 1rem;
 }
 .section__title {
+  font-family: 'Roboto Slab', serif;
   font-size: 1.8rem;
   background-color: #003153;
   color: white;
@@ -289,58 +294,19 @@ body {
 }
 
 /* FORMACION */
-.formacion {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  width: 100%;
+.section__content--formacion {
+  margin: 2rem 0rem;
 }
-.formacion__card {
-  width: 280px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px black;
-  margin: 1rem;
+.section__text {
+  padding: 1rem 0rem;
 }
-.formacion__img-container {
-  width: 100%;
-  height: 180px;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-.formacion__img-container-01 {
-  background-image: url(/images/formacion/formacion_01.jpg);
-}
-.formacion__img-container-02 {
-  background-image: url(/images/formacion/formacion_02.jpg);
-}
-.formacion__img-container-03 {
-  background-image: url(/images/formacion/formacion_03.jpg);
-}
-.formacion__img-container-04 {
-  background-image: url(/images/formacion/formacion_04.jpg);
-}
-.formacion__mask {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  z-index: 1;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
-}
-.formacion__title {
+.section__subtitle {
   font-size: 2rem;
   text-align: center;
 }
-.formacion__list {
+.section__list-item {
   font-size: 1.5rem;
-  margin: 1rem 0rem 1rem 2.5rem;
+  margin: 0.5rem 0rem 0.5rem 3rem;
 }
 
 /* RESPONSIVE */
@@ -371,14 +337,14 @@ body {
     background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
   }
   .landing__title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding: 0.5rem 0rem 2rem 3rem;
     border-radius: 20px 0px 0px 20px;
     width: 40vw;
     margin-left: 10vw;
   }
   .landing__brand {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .landing__slogan {
     font-size: 2rem;
@@ -432,12 +398,27 @@ body {
   .section__description {
     font-size: 1.8rem;
   }
+  .order-0 {
+    order: 0;
+  }
+  .rotate-filter {
+    background: linear-gradient(270deg, rgba(238,238,238,1) 0%, rgba(238,238,238,0.1) 50%, rgba(238,238,238,0) 100%);
+  }
+  .section__content--formacion {
+    margin-bottom: 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
   body {
     width: 90vw;
     margin: auto;
+  }
+  .landing__title {
+    font-size: 2.5rem;
+  }
+  .landing__brand {
+    font-size: 4.5rem;
   }
 }
 

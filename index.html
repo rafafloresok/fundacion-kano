@@ -1,263 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Fundación Kano | Al servicio de las personas con discapacidad</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header header--section">
-        <a class="link logo-link" href="../index.html">
-            KANO
-          <!-- <img class="logo-link__image" src="../images/favicon_io/favicon-32x32.png" alt="logo de I.F.C. consulting"> -->
-        </a>
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__item"><a class="link navbar__link navbar__link--section" href="#">Inicio</a></li>
-                <li class="navbar__item"><a class="link navbar__link navbar__link--section" href="#">Sobre nosotros</a></li>
-                <li class="navbar__item"><a class="link navbar__link navbar__link--section" href="#">Formación y Educación</a></li>
-                <li class="navbar__item"><a class="link navbar__link navbar__link--section" href="#">Hacete socio</a></li>
-                <li class="navbar__item"><a class="link navbar__link navbar__link--section" href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <button class="nav-toggle" aria-label="abrir navegacion">
-            <span class="hamburger"></span>
-        </button>
+      <a class="link logo-link" href="../index.html">
+        KANO
+        <!-- <img class="logo-link__image" src="../images/favicon_io/favicon-32x32.png" alt="logo de I.F.C. consulting"> -->
+      </a>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="link navbar__link navbar__link--section" href="#"
+              >Inicio</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="link navbar__link navbar__link--section" href="#"
+              >Sobre nosotros</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="link navbar__link navbar__link--section" href="#"
+              >Formación y Educación</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="link navbar__link navbar__link--section" href="#"
+              >Hacete socio</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="link navbar__link navbar__link--section" href="#"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="abrir navegacion">
+        <span class="hamburger"></span>
+      </button>
     </header>
 
     <div class="landing">
-        <div id="landingCarousel" class="landing__carousel">
-            <div class="landing__filter"></div>
+      <div id="landingCarousel" class="landing__carousel">
+        <div class="landing__filter"></div>
+      </div>
+      <div class="landing__info">
+        <div class="landing__title-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+          <h1 class="landing__title">
+            FUNDACION<span class="landing__brand"> KANO </span>
+          </h1>
+          <svg
+            class="landing__logo"
+            id="ek3nwpW7ThL1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 200 200"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+          >
+            <line
+              x1="50"
+              y1="-50"
+              x2="-50"
+              y2="50"
+              transform="translate(50 50)"
+              fill="none"
+              stroke="#fff"
+              stroke-width="7"
+            />
+            <line
+              x1="-50"
+              y1="-50"
+              x2="50"
+              y2="50"
+              transform="translate(50 150)"
+              fill="none"
+              stroke="#fff"
+              stroke-width="7"
+            />
+            <line
+              x1="-2"
+              y1="0"
+              x2="1"
+              y2="0"
+              transform="matrix(1.00001 0 0 1 0 100)"
+              fill="none"
+              stroke="#fff"
+              stroke-width="6"
+            />
+          </svg>
         </div>
-        <div class="landing__info">
-            <div class="landing__title-container">
-                <h1 class="landing__title">FUNDACION<span class="landing__brand"> KANO </span></h1>
-                <svg class="landing__logo" id="ek3nwpW7ThL1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><line x1="50" y1="-50" x2="-50" y2="50" transform="translate(50 50)" fill="none" stroke="#fff" stroke-width="7"/><line x1="-50" y1="-50" x2="50" y2="50" transform="translate(50 150)" fill="none" stroke="#fff" stroke-width="7"/><line x1="-2" y1="0" x2="1" y2="0" transform="matrix(1.00001 0 0 1 0 100)" fill="none" stroke="#fff" stroke-width="6"/></svg>
-            </div>
-            <p class="landing__slogan">Al servicio de las personas con discapacidad</p>
-        </div>
+        <p class="landing__slogan" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+          Al servicio de las personas con discapacidad
+        </p>
+      </div>
     </div>
 
     <div class="section section--la-fundacion">
-        <div class="section__title-container">
-            <h2 class="section__title">La Fundación</h2>
-            <svg class="section__logo" id="ek3nwpW7ThL1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><line x1="50" y1="-50" x2="-50" y2="50" transform="translate(50 50)" fill="none" stroke="#fff" stroke-width="7"/><line x1="-50" y1="-50" x2="50" y2="50" transform="translate(50 150)" fill="none" stroke="#fff" stroke-width="7"/><line x1="-2" y1="0" x2="1" y2="0" transform="matrix(1.00001 0 0 1 0 100)" fill="none" stroke="#fff" stroke-width="6"/></svg>
-            <div class="title__filter"></div>
+      <div class="section__title-container" data-aos="fade-left" data-aos-duration="1500" data-aos-mirror="true">
+        <h2 class="section__title">La Fundación</h2>
+        <svg
+          class="section__logo"
+          id="ek3nwpW7ThL1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 200 200"
+          shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision"
+        >
+          <line
+            x1="50"
+            y1="-50"
+            x2="-50"
+            y2="50"
+            transform="translate(50 50)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="7"
+          />
+          <line
+            x1="-50"
+            y1="-50"
+            x2="50"
+            y2="50"
+            transform="translate(50 150)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="7"
+          />
+          <line
+            x1="-2"
+            y1="0"
+            x2="1"
+            y2="0"
+            transform="matrix(1.00001 0 0 1 0 100)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="6"
+          />
+        </svg>
+        <div class="title__filter"></div>
+      </div>
+      <div class="section__content" data-aos="fade-right" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+        <div class="section__img-container">
+          <div class="section__img-filter"></div>
+          <img
+            class="section__img section__img--la-fundacion"
+            src="./images/la_fundacion_01.jpg"
+            alt=""
+          />
         </div>
-        <div class="section__content">
-          <div class="section__img-container">
-              <div class="section__img-filter"></div>
-              <img class="section__img section__img--la-fundacion" src="./images/la_fundacion_01.jpg" alt="">
-          </div>
-          <div class="section__text">
-              <p class="section__description">
-                En Fundación KANO sabemos de la importancia de generar oportunidades para lxs jóvenes con discapacidad.
-              </p>
-              <p class="section__description">
-                También estamos enterados del papel trascendental del arte, la innovación y el fomento de la creatividad en todas sus formas como vehículo para la inclusión.
-              </p>
-              <p class="section__description">
-                Es por eso que impulsamos el empleo con apoyo para personas con discapacidad que desean insertarse en el mercado laboral y trabajamos en el desarrollo del potencial de adultxs jóvenes con discapacidad.
-              </p>
-              <p class="section__description">
-                Nuestro objetivo es facilitar una vida plena, donde se generen cada vez más opciones para el crecimiento, la independencia y el bienestar de quienes tienen alguna discapacidad.
-              </p>
-              <p class="section__description">
-                ¡Te invitamos a ser parte de nuestra misión y ayudarnos a abrir la puerta a un mundo de arte, nuevos desafíos y crecimiento personal donde quepamos todos!
-              </p>
-          </div>
+        <div class="section__text">
+          <p class="section__description">
+            En Fundación KANO sabemos de la importancia de generar oportunidades
+            para lxs jóvenes con discapacidad.
+          </p>
+          <p class="section__description">
+            También estamos enterados del papel trascendental del arte, la
+            innovación y el fomento de la creatividad en todas sus formas como
+            vehículo para la inclusión.
+          </p>
+          <p class="section__description">
+            Es por eso que impulsamos el empleo con apoyo para personas con
+            discapacidad que desean insertarse en el mercado laboral y
+            trabajamos en el desarrollo del potencial de adultxs jóvenes con
+            discapacidad.
+          </p>
+          <p class="section__description">
+            Nuestro objetivo es facilitar una vida plena, donde se generen cada
+            vez más opciones para el crecimiento, la independencia y el
+            bienestar de quienes tienen alguna discapacidad.
+          </p>
+          <p class="section__description">
+            ¡Te invitamos a ser parte de nuestra misión y ayudarnos a abrir la
+            puerta a un mundo de arte, nuevos desafíos y crecimiento personal
+            donde quepamos todos!
+          </p>
         </div>
+      </div>
     </div>
-    
+
     <div class="section section--quienes-somos">
-      <div class="section__title-container">
+      <div class="section__title-container" data-aos="fade-left" data-aos-duration="1500" data-aos-mirror="true">
         <h2 class="section__title">Quienes somos</h2>
-        <svg class="section__logo" id="ek3nwpW7ThL1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><line x1="50" y1="-50" x2="-50" y2="50" transform="translate(50 50)" fill="none" stroke="#fff" stroke-width="7"/><line x1="-50" y1="-50" x2="50" y2="50" transform="translate(50 150)" fill="none" stroke="#fff" stroke-width="7"/><line x1="-2" y1="0" x2="1" y2="0" transform="matrix(1.00001 0 0 1 0 100)" fill="none" stroke="#fff" stroke-width="6"/></svg>
+        <svg
+          class="section__logo"
+          id="ek3nwpW7ThL1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 200 200"
+          shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision"
+        >
+          <line
+            x1="50"
+            y1="-50"
+            x2="-50"
+            y2="50"
+            transform="translate(50 50)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="7"
+          />
+          <line
+            x1="-50"
+            y1="-50"
+            x2="50"
+            y2="50"
+            transform="translate(50 150)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="7"
+          />
+          <line
+            x1="-2"
+            y1="0"
+            x2="1"
+            y2="0"
+            transform="matrix(1.00001 0 0 1 0 100)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="6"
+          />
+        </svg>
         <div class="title__filter"></div>
       </div>
       <div class="profiles">
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/ana_garcia.jpg" alt="" class="profiles__img">
+            <img src="./images/ana_garcia.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Ana García</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/juan_perez.jpg" alt="" class="profiles__img">
+            <img src="./images/juan_perez.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Juan Pérez</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/tony_nuñez.jpg" alt="" class="profiles__img">
+            <img src="./images/tony_nuñez.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Pedro Gonzalez</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/ana_garcia.jpg" alt="" class="profiles__img">
+            <img src="./images/ana_garcia.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Ana García</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/juan_perez.jpg" alt="" class="profiles__img">
+            <img src="./images/juan_perez.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Juan Pérez</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/tony_nuñez.jpg" alt="" class="profiles__img">
+            <img src="./images/tony_nuñez.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Pedro Gonzalez</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/ana_garcia.jpg" alt="" class="profiles__img">
+            <img src="./images/ana_garcia.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Ana García</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/juan_perez.jpg" alt="" class="profiles__img">
+            <img src="./images/juan_perez.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Juan Pérez</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
-        <div class="profiles__card">
+        <div class="profiles__card" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
           <div class="profiles__img--container">
-            <img src="./images/tony_nuñez.jpg" alt="" class="profiles__img">
+            <img src="./images/tony_nuñez.jpg" alt="" class="profiles__img" />
           </div>
           <div class="profiles__mask"></div>
           <div class="profiles__text">
             <h3 class="profiles__name">Pedro Gonzalez</h3>
-            <p class="profiles__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ex eligendi eius architecto velit repudiandae quasi similique laborum eaque, molestias aut? Porro dolores at a sint repellat, possimus ullam provident accusamus sed dolore saepe dolorem mollitia soluta, sequi earum! Hic?</p>
+            <p class="profiles__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              ex eligendi eius architecto velit repudiandae quasi similique
+              laborum eaque, molestias aut? Porro dolores at a sint repellat,
+              possimus ullam provident accusamus sed dolore saepe dolorem
+              mollitia soluta, sequi earum! Hic?
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <hr>
-    <div class="section section--formacion">
-        <div class="section__title-container">
-            <h2 class="section__title">Formación y Educación</h2>
-            <svg class="section__logo" id="ek3nwpW7ThL1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><line x1="50" y1="-50" x2="-50" y2="50" transform="translate(50 50)" fill="none" stroke="#fff" stroke-width="7"/><line x1="-50" y1="-50" x2="50" y2="50" transform="translate(50 150)" fill="none" stroke="#fff" stroke-width="7"/><line x1="-2" y1="0" x2="1" y2="0" transform="matrix(1.00001 0 0 1 0 100)" fill="none" stroke="#fff" stroke-width="6"/></svg>
-            <div class="title__filter"></div>
-        </div>
-        <div class="formacion">
-            <div class="formacion__card">
-                <div class="formacion__img-container formacion__img-container-01">
-                  <div class="formacion__mask"></div>
-                </div>
-                <div class="formacion__info">
-                    <h3 class="formacion__title">Escuela de Formación Laboral (Reg A-102)</h3>
-                    <ul class="formacion__list">
-                        <li class="formacion__item">Orientación Vocacional</li>
-                        <li class="formacion__item">Manejo de Finanzas</li>
-                        <li class="formacion__item">Ejercicio de Ciudadanía</li>
-                        <li class="formacion__item">Taller de Habilidades cognitivas</li>
-                        <li class="formacion__item">Escritura Creativa</li>
-                        <li class="formacion__item">Habilidades Digitales 4.0</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="formacion__card">
-                <div class="formacion__img-container formacion__img-container-02">
-                  <div class="formacion__mask"></div>
-                </div>
-                <div class="formacion__info">
-                    <h3 class="formacion__title">Centro de Formación Profesional</h3>
-                    <ul class="formacion__list">
-                        <li class="formacion__item">Lengua de Señas Argentina</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="formacion__card">
-                <div class="formacion__img-container formacion__img-container-03">
-                  <div class="formacion__mask"></div>
-                </div>
-                <div class="formacion__info">
-                    <h3 class="formacion__title">Centro Educativo Cultural y Artístico</h3>
-                    <ul class="formacion__list">
-                        <li class="formacion__item">Ensamble Musical</li>
-                        <li class="formacion__item">Artes Plásticas</li>
-                        <li class="formacion__item">Escultura</li>
-                        <li class="formacion__item">Taller de Habilidades cognitivas</li>
-                        <li class="formacion__item">Teatro y Expresión</li>
-                        <li class="formacion__item">Juego y Recreación</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="formacion__card">
-                <div class="formacion__img-container formacion__img-container-04">
-                  <div class="formacion__mask"></div>
-                </div>
-                <div class="formacion__info">
-                    <h3 class="formacion__title">Talleres Abiertos a la Comunidad</h3>
-                    <ul class="formacion__list">
-                        <li class="formacion__item">Cocina</li>
-                        <li class="formacion__item">Sublimación y Estampado</li>
-                        <li class="formacion__item">Secretariado Administrativo</li>
-                        <li class="formacion__item">Informática</li>
-                    </ul>
-                </div>
-            </div>
-          <h3></h3>
-          <ul>
-            <li></li>
-          </ul>
-          <h3></h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <h3></h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-    </div>
 
+    <div class="section section--formacion">
+      <div class="section__title-container" data-aos="fade-left" data-aos-duration="1500" data-aos-mirror="true">
+        <h2 class="section__title">Formación y Educación</h2>
+        <svg
+          class="section__logo"
+          id="ek3nwpW7ThL1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 200 200"
+          shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision"
+        >
+          <line
+            x1="50"
+            y1="-50"
+            x2="-50"
+            y2="50"
+            transform="translate(50 50)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="7"
+          />
+          <line
+            x1="-50"
+            y1="-50"
+            x2="50"
+            y2="50"
+            transform="translate(50 150)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="7"
+          />
+          <line
+            x1="-2"
+            y1="0"
+            x2="1"
+            y2="0"
+            transform="matrix(1.00001 0 0 1 0 100)"
+            fill="none"
+            stroke="#fff"
+            stroke-width="6"
+          />
+        </svg>
+        <div class="title__filter"></div>
+      </div>
+      <div class="section__content section__content--formacion" data-aos="fade-right" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+        <div class="section__img-container">
+          <div class="section__img-filter"></div>
+          <img
+            class="section__img section__img--la-fundacion"
+            src="./images/formacion/formacion_01.jpg"
+            alt=""
+          />
+        </div>
+        <div class="section__text">
+          <h3 class="section__subtitle">
+            Escuela de Formación Laboral (Reg A-102)
+          </h3>
+          <ul class="section__list">
+            <li class="section__list-item">Orientación Vocacional</li>
+            <li class="section__list-item">Manejo de Finanzas</li>
+            <li class="section__list-item">Ejercicio de Ciudadanía</li>
+            <li class="section__list-item">Taller de Habilidades cognitivas</li>
+            <li class="section__list-item">Escritura Creativa</li>
+            <li class="section__list-item">Habilidades Digitales 4.0</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__content section__content--formacion" data-aos="fade-left" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+        <div class="section__img-container order-0">
+          <div class="section__img-filter rotate-filter"></div>
+          <img
+            class="section__img section__img--la-fundacion"
+            src="./images/formacion/formacion_02.jpg"
+            alt=""
+          />
+        </div>
+        <div class="section__text">
+          <h3 class="section__subtitle">Centro de Formación Profesional</h3>
+          <ul class="section__list">
+            <li class="section__list-item">Lengua de Señas Argentina</li>
+          </ul>
+          <h3 class="section__subtitle">Talleres Abiertos a la Comunidad</h3>
+          <ul class="section__list">
+            <li class="section__list-item">Cocina</li>
+            <li class="section__list-item">Sublimación y Estampado</li>
+            <li class="section__list-item">Secretariado Administrativo</li>
+            <li class="section__list-item">Informática</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section__content section__content--formacion" data-aos="fade-right" data-aos-duration="1500" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+        <div class="section__img-container">
+          <div class="section__img-filter"></div>
+          <img
+            class="section__img section__img--la-fundacion"
+            src="./images/formacion/formacion_03.jpg"
+            alt=""
+          />
+        </div>
+        <div class="section__text">
+          <h3 class="section__subtitle">
+            Centro Educativo Cultural y Artístico
+          </h3>
+          <ul class="section__list">
+            <li class="section__list-item">Ensamble Musical</li>
+            <li class="section__list-item">Artes Plásticas</li>
+            <li class="section__list-item">Escultura</li>
+            <li class="section__list-item">Taller de Habilidades cognitivas</li>
+            <li class="section__list-item">Teatro y Expresión</li>
+            <li class="section__list-item">Juego y Recreación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/script/script.js"></script>
-</body>
+    <script>
+      AOS.init({mirror: true});
+      document.addEventListener('aos:in', ({ detail }) => {
+        console.log('animated in', detail);
+      });
+      document.addEventListener('aos:out', ({ detail }) => {
+        console.log('animated out', detail);
+      });
+    </script>
+  </body>
 </html>
